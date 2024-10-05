@@ -20,17 +20,17 @@ This README file was written using the [GitHub's documentation on READMEs](https
 1. [How to get started.](#3-how-to-get-started)
 1. [How to get help.](#4-how-to-get-help)
 1. [How to contribute.](#5-how-to-contribute)
-1. [Weekly Assignment.](#5-how-to-contribute)
+1. [Weekly Assignment.](#6-weekly-assignments)
 
     1. [Assignment 01- Create Directory Structure](#assignment-01---create-directory-structure)
     2. [Assignment 02- Timestamps](#assignment-02---weather)
     3. [Assignment 03- Formatting Timestamps]()
     4. [Assignment 04- Creating Timestamped Files]()
-    5. [Assignment 05- Download Today;s Weather Data](#assignment-05---download-todays-weather-data)
-    6. [Assignment 06- Timestamp the Data](#assignment-06---timestamp-the-data)
-    7. [Assignment 07- Write the Script](#assignment-07---write-the-script)
-    8. [Assignment 08- Notebook](#assignment-08---notebook)
-    9. [Assignment 09- Pandas](#assignment-09---pandas)
+    5. [Assignment 05- Download Today;s Weather Data]()
+    6. [Assignment 06- Timestamp the Data]()
+    7. [Assignment 07- Write the Script]()
+    8. [Assignment 08- Notebook]()
+    9. [Assignment 09- Pandas]()
 
 ## 1. Introduction
 
