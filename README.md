@@ -139,6 +139,10 @@ dryBulbTemperature_Celsius
 
 **My notes:**
 
+Task 1: simple file was created to output 'Hello world', and uploaded to my respository.
+
+Task 2:
+
 **When run:**
 
 **Associated Code:**
