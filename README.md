@@ -23,14 +23,14 @@ This README file was written using the [GitHub's documentation on READMEs](https
 1. [Weekly Assignment.](#6-weekly-assignments)
 
     1. [Assignment 01- Create Directory Structure](#assignment-01---create-directory-structure)
-    2. [Assignment 02- Timestamps](#assignment-02---weather)
-    3. [Assignment 03- Formatting Timestamps]()
-    4. [Assignment 04- Creating Timestamped Files]()
-    5. [Assignment 05- Download Today;s Weather Data]()
-    6. [Assignment 06- Timestamp the Data]()
-    7. [Assignment 07- Write the Script]()
-    8. [Assignment 08- Notebook]()
-    9. [Assignment 09- Pandas]()
+    2. [Assignment 02- Weather](#assignment-02---weather)
+    3. [Assignment 03- ]()
+    4. [Assignment 04- ]()
+    5. [Assignment 05- ]()
+    6. [Assignment 06- ]()
+    7. [Assignment 07- ]()
+    8. [Assignment 08- ]()
+    9. [Assignment 09- ]()
 
 ## 1. Introduction
 
