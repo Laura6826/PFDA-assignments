@@ -25,7 +25,6 @@ This README file was written using the [GitHub's documentation on READMEs](https
     1. [Assignment 01- Create Directory Structure](#assignment-01---create-directory-structure)
     2. [Assignment 02- Weather](#assignment-02---weather)
     3. [Assignment 03- ]()
-    4. [Assignment 04- ]()
     5. [Assignment 05- ]()
     6. [Assignment 06- ]()
     7. [Assignment 07- ]()
@@ -139,37 +138,13 @@ dryBulbTemperature_Celsius
 
 **My notes:**
 
-Task 1: simple file was created to output 'Hello world', and uploaded to my respository.
+The data needed to be manipulated as it contained both the data and time, while we only required the time. The code necessary to complete this task was sourced from https://stackoverflow.com/questions/35595710/splitting-timestamp-column-into-separate-date-and-time-columns.
 
-Task 2:
-
-**When run:**
-
-**Associated Code:**
-
-```ruby
-
-```
+The plot was initally generated using Matplotlib and afterwards on Seaborn.
 
 ***
 
 ## **Assignment 03** -
-
-**Assignment Instructions:**
-
-**My notes:**
-
-**When run:**
-  
-**Associated Code:**
-
-```ruby
-
-```
-
-***
-
-## **Assignment 04** -
 
 **Assignment Instructions:**
 
