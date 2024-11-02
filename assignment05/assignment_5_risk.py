@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import random
 
 # First we need to define a function that simulates rolling a single 6-sided die.
-# Initially i tried np.random. uniform, however this returned floats.
+# Initially i tried 'np.random.uniform', however this returned floats.
 # With research, I found that np.random.randint would be more suitable for this task.
 # Reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.randint.html
 # Reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.uniform.html	
@@ -20,12 +20,70 @@ def roll_dice():
 # result = roll_dice()
 # print("You rolled a", result)
 
-attacker_dice= np.random.randint(1, 7, size=3)
-defender_dice= np.random.randint(1, 7, size=2)
+attacker_dice = np.random.randint(1, 7, size=3)
+defender_dice = np.random.randint(1, 7, size=2)
+
+# Sanity check, to ensure the code is working as expected.
 print(attacker_dice, defender_dice)
+
+# Next we need to sort the dice in descending order, so that we can compare the highest dice rolls.
+sorted_attacker_dice = sorted(attacker_dice, reverse=True)
+sorted_defender_dice = sorted(defender_dice, reverse=True)
+
+# Sanity check, to ensure the code is working as expected.	
+print("Attacker dice (sorted):", sorted_attacker_dice)
+print("Defender dice (sorted):", sorted_defender_dice)
+
+# Next we need to similate a single battle round, where the attacker rolls 3 dice and the defender rolls 2 dice and compare the outcomes.
+# We will use a for loop to compare the dice rolls and determine the outcome of the battle.
+# According to the rules of Risk:
+# If the attacker's dice roll is higher than the defender's dice roll, the defender loses.
+# If the defender's dice roll is higher than the attacker's dice roll, the attacker loses.
+# If the dice rolls are equal, the attacker loses a unit.
+
+def battle_round():
+    attacker_dice = np.random.randint(1, 7, size=3)
+    defender_dice = np.random.randint(1, 7, size=2)
+    
+    attacker_losses = 0
+    defender_losses = 0
+    
+    for i in range(min(len(attacker_dice), len(defender_dice))):
+                   # The min function is used, to ensure that the loop stops when the shortest list is complete. 
+                   # Reference: https://www.geeksforgeeks.org/python-min-function/
+        a = attacker_dice[i]
+        d = defender_dice[i]
+        
+        if a > d:
+            defender_losses += 1
+        else:
+            attacker_losses += 1
+    
+    return attacker_losses
+
+# Sanity check, to ensure the code is working as expected.
+result = battle_round()
+print("Attacker losses:", result)
+
+#Now we need to simulate the result of 1000 battles.
+
+def simulate_battles(num_rounds):
+    attacker_total_losses = 0
+    
+    for _ in range(num_rounds):
+        attacker_losses = battle_round()
+        attacker_total_losses += attacker_losses
+    
+    return attacker
 
 
 '''
+for a,d in battle():
+    attacker_losses =0
+    defender_losses =0
+    if a>d:
+        defender_losses = +1   
+
 # Next, we need to define a function that simulates rolling multiple dice.
 def roll_dice(num_dice):
     return [roll_dice() for _ in range(num_dice)]
