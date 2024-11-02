@@ -58,13 +58,15 @@ def battle_round():
             defender_losses += 1
         else:
             attacker_losses += 1
+        return attacker_losses
+        if attacker
     
-    return attacker_losses
+
 
 # Sanity check, to ensure the code is working as expected.
 result = battle_round()
 print("Attacker losses:", result)
-
+'''
 #Now we need to simulate the result of 1000 battles.
 
 def simulate_battles(num_rounds):
@@ -76,8 +78,6 @@ def simulate_battles(num_rounds):
     
     return attacker
 
-
-'''
 for a,d in battle():
     attacker_losses =0
     defender_losses =0
