@@ -1,10 +1,10 @@
-# Assignemtn 05. 
-# The aim of this program is to write a programme 
+# Assignment 05. Risk Battle Simulation
+# The aim of this program is to write a programme was to simulates 1000 individual battle rounds in Risk (3 attacker vs 2 defender),
+# and plots the results.
 # Author: Laura Lyons
 
 import numpy as np
 import matplotlib.pyplot as plt
-import random
 
 # First we need to define a function that simulates rolling a single 6-sided die.
 # Initially i tried 'np.random.uniform', however this returned floats.
@@ -92,6 +92,11 @@ print("Winner:", winner)
 # Plot the results
 labels = ['Attacker Wins', 'Defender Wins']
 losses = [attacker_wins, defender_wins]
+
+# Add the numbers inside the bars.
+# (created with help from: https://stackoverflow.com/questions/28931224/adding-value-labels-on-a-matplotlib-bar-chart)
+for i, value in enumerate(losses): 
+    plt.text(i, value/2, str(value), ha='center', va='center', color='white', fontweight='bold')
 
 plt.bar(labels, losses, color=['green', 'blue'])
 plt.title('Risk Battle Simulation: 1000 rounds', fontweight='bold')
