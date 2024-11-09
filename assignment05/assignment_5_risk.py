@@ -2,7 +2,6 @@
 # The aim of this program is to write a programme 
 # Author: Laura Lyons
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 import random
@@ -43,8 +42,7 @@ sorted_defender_dice = sorted(defender_dice, reverse=True)
 
 def battle_round():
     attacker_dice = np.random.randint(1, 7, size=3)
-    defender_dice = np.random.randint(1, 7, size=2)
-    
+    defender_dice = np.random.randint(1, 7, size=2)  
     attacker_losses = 0
     defender_losses = 0
     
@@ -96,8 +94,8 @@ labels = ['Attacker Wins', 'Defender Wins']
 losses = [attacker_wins, defender_wins]
 
 plt.bar(labels, losses, color=['green', 'blue'])
-plt.title('Risk Battle Simulation: 1000 rounds')
+plt.title('Risk Battle Simulation: 1000 rounds', fontweight='bold')
 plt.ylabel('Total Battles Won')
 plt.xlabel('Teams')
-plt.legend(loc='upper right')
 plt.show()
+# plt.savefig('Assignment05_Risk Battle Simulation.png')
