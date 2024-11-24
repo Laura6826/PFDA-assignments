@@ -26,14 +26,12 @@ def battle_round():
     
     for a, d in zip(attacker_dice, defender_dice):
         if a >= d:
-            defender_losses += 1
+            defender_losses = 2  # Defender loses 2 units
+            break  # Only one side can lose dice in each round
         else:
-            attacker_losses += 1
-    
+            attacker_losses = 3  # Attacker loses 3 units
+            break  # Only one side can lose dice in each round
     return attacker_losses, defender_losses
-    # the return function wasmoved outside the loop, to ensure that the function returns the total number of troops,
-    # lost by the attacker and defender in each round. Initially the defender wasnt winning any rounds, which is statistically unlikely.
-    # The function now returns the number of troops lost by the attacker and defender in each round.
 
 # Ensure that the input is a positive integer for attacker size
 initial_attacker_size = int(input('Please enter the size of the attacking army: '))
@@ -47,9 +45,9 @@ while initial_defender_size <= 0:
 
 # Simulate a full series of rounds until one side is wiped out
 def simulate_battle(attacker_size, defender_size):
-    attacker_total_losses = 0
-    defender_total_losses = 0
     rounds = 0
+    attacker_rounds_won = 0
+    defender_rounds_won = 0
 
     while attacker_size > 0 and defender_size > 0:
         # Apply different loss rules for total dice lost.
@@ -59,57 +57,56 @@ def simulate_battle(attacker_size, defender_size):
         # Correct the loss application logic
         attacker_size -= attacker_losses
         defender_size -= defender_losses
-        attacker_total_losses += attacker_losses * 3
-        defender_total_losses += defender_losses * 2
         rounds += 1
 
-    return attacker_total_losses, defender_total_losses, rounds
+        # Ensure the size does not go below zero
+        attacker_size = max(0, attacker_size)
+        defender_size = max(0, defender_size)
+
+        if attacker_losses > 0:
+            defender_rounds_won += 1
+        else:
+            attacker_rounds_won += 1
+
+        print(f"Round: {rounds}, Attacker Losses: {attacker_losses}, Defender Losses: {defender_losses}, Attacker Size: {attacker_size}, Defender Size: {defender_size}")
+
+    return attacker_size, defender_size, rounds, attacker_rounds_won, defender_rounds_won
 
 # Run the simulation
-attacker_total_losses, defender_total_losses, rounds = simulate_battle(initial_attacker_size, initial_defender_size)
+attacker_size, defender_size, rounds, attacker_rounds_won, defender_rounds_won = simulate_battle(initial_attacker_size, initial_defender_size)
 
 # Determine the winner
-if attacker_total_losses > defender_total_losses:
-    winner = "Defender"
-elif defender_total_losses > attacker_total_losses:
+if attacker_size > 0:
     winner = "Attacker"
 else:
-    winner = "Draw"
+    winner = "Defender"
 
-attacker_wins = max(0, initial_attacker_size - attacker_total_losses)
-defender_wins = max(0, initial_defender_size - defender_total_losses)
-
-print(f"Total Attacker Wins: {attacker_wins}")
-print(f"Total Defender Wins: {defender_wins}")
 print(f"Winner: {winner}")
 print(f"Total Rounds: {rounds}")
+print(f"Attacker Rounds Won: {attacker_rounds_won}")
+print(f"Defender Rounds Won: {defender_rounds_won}")
 
 # Plot the results
-labels = ['Attacker Wins', 'Defender Wins']
-wins = [attacker_wins, defender_wins]
+labels = ['Attacker Rounds Won', 'Defender Rounds Won']
+rounds_won = [attacker_rounds_won, defender_rounds_won]
 
-plt.bar(labels, wins, color=['red', 'blue'])
+plt.figure(figsize=(10, 6))
+bars = plt.bar(labels, rounds_won, color=['red', 'blue'])
 
-# Add the numbers on top of the bars
-for i, value in enumerate(wins): 
-    plt.text(i, value + 5, str(value), ha='center', va='bottom', fontweight='bold')
+# Add the numbers inside the bars (generated from CoPilot)
+for bar in bars:
+    yval = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2, yval - 5, int(yval), ha='center', va='top', fontweight='bold', color='white', fontsize=14)
 
-plt.title('Risk Battle Simulation: 1000 rounds', fontweight='bold')
-plt.ylabel('Number of Wins')
+# Add the word "Winner" over the winning team's bar (generated from CoPilot)
+if attacker_rounds_won > defender_rounds_won:
+    plt.text(bars[0].get_x() + bars[0].get_width()/2, bars[0].get_height() + 5, 'Winner', ha='center', va='top', fontweight='bold', color='green', fontsize=16)
+else:
+    plt.text(bars[1].get_x() + bars[1].get_width()/2, bars[1].get_height() + 5, 'Winner', ha='center', va='top', fontweight='bold', color='green', fontsize=16)
+
+plt.title('Risk Battle Simulation: Rounds Won by Each Side', fontsize=16, fontweight='bold')
+plt.ylabel('Number of Rounds Won', fontsize= 12)
 plt.xlabel('Teams')
 plt.show()
 
-
-labels = ['Attacker Remaining', 'Defender Remaining']
-remaining = [attacker_wins, defender_wins]
-
-plt.bar(labels, remaining, color=['green', 'blue'])
-
-# Add the numbers inside the bars
-for i, value in enumerate(remaining): 
-    plt.text(i, value/2, str(value), ha='center', va='center', color='white', fontweight='bold')
-
-plt.title('Risk Battle Simulation: Until One Side is Wiped Out', fontweight='bold')
-plt.ylabel('Remaining Troops')
-plt.xlabel('Teams')
-plt.show()
+plt.savefig('images/Assignment05_EXTRA_Risk Battle Simulation.jpg')

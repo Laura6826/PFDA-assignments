@@ -103,4 +103,5 @@ plt.title('Risk Battle Simulation: 1000 rounds', fontweight='bold')
 plt.ylabel('Total Battles Won')
 plt.xlabel('Teams')
 plt.show()
-# plt.savefig('Assignment05_Risk Battle Simulation.png')
+
+plt.savefig('images/Assignment05_Risk Battle Simulation.jpg')
