@@ -24,7 +24,7 @@ This README file was written using the [GitHub's documentation on READMEs](https
 
     1. [Assignment 01- Create Directory Structure](#assignment-01---create-directory-structure)
     2. [Assignment 02- Weather](#assignment-02---weather)
-    3. [Assignment 03- ]()
+    3. [Assignment 03- Domains]()
     5. [Assignment 05- ]()
     6. [Assignment 06- ]()
     7. [Assignment 07- ]()
@@ -61,18 +61,6 @@ In order to run the included files, you will need to ensure that you have access
 1. [Anaconda](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) (if Anaconda is too large, miniconda would also suffice).
 2. [Visual Studio Code](https://code.visualstudio.com/Download) (this is a code editor).
 
-### Recommended libraries
-
-For a seamless excutition, I would also recommend you have access to the below libraries prior to running the files:
-
-```ruby
-  import pandas as pd
-  import numpy as np
-  import matplotlib.pyplot as plt
-  import seaborn as sns
-  import scipy
-```
-
 ### **Additions to** *.gitignore*
 
 A number of [additional files](https://github.com/github/gitignore/tree/main/Global) were added to my .gitignore prior to running the programmes:
@@ -84,6 +72,42 @@ A number of [additional files](https://github.com/github/gitignore/tree/main/Glo
   5. TeX.gitignore
   6. Vim.gitignore
   7. Windows.gitignore
+
+## How to run the Notebook
+
+### Using Using Visual Studio Code & Anaconda or GitHub Codespaces
+
+1. **Clone the Repository**:
+
+```ruby
+   git clone https://github.com/Laura6826/PFDA-project
+```
+
+2. **Install the required packages**:
+
+For a seamless excutition, I would also recommend you have access to the below libraries prior to running the files. The libraries required to run this file (as noted below), can be installed with the following code (as detailed under ):
+
+```ruby
+pip install -r requirements.txt
+```
+
+,or you can manually install each of the libraries below.+
+
+```ruby
+  import pandas as pd
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+  import scipy
+```
+
+***
+
+### Open the notebook in Visual Studio Code
+
+- Open Visual Studio Code.
+- Open the `computer_infrastructure_assignments` folder.
+- Open the `weather.ipynb` file.
 
 ## 4. How to get help
 
@@ -136,31 +160,43 @@ Create a jupyter notebook called assignment2-weather.ipynb that has a nice plot 
 dryBulbTemperature_Celsius
 ```
 
+### Associated Code
+
+#### Task 1
+
+```ruby
+print("Hello World!")
+```
+
+#### Task 2
+
+The notebook created to fulfill this part of the assignment can be located [here](assignment02\assignment2-weather.ipynb)
+
 **My notes:**
 
-The data needed to be manipulated as it contained both the data and time, while we only required the time. The code necessary to complete this task was sourced from https://stackoverflow.com/questions/35595710/splitting-timestamp-column-into-separate-date-and-time-columns.
+The data needed to be manipulated as it contained both the data and time, while we only required the time. This is the [code](https://stackoverflow.com/questions/35595710/splitting-timestamp-column-into-separate-date-and-time-columns) necessary to complete this task.
 
 The plot was initally generated using Matplotlib and afterwards on Seaborn.
 
 ***
 
-## **Assignment 03** -
+## **Assignment 03** - Domains
 
 **Assignment Instructions:**
 
+Create a notebook called `assignment03-pie.ipynb`.
+
+The note book should have a nice pie chart of peoples email domains in the [csv file](https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download).
+
 **My notes:**
 
-**When run:**
-  
-**Associated Code:**
+The notebook associated with assignment 3 can be found [here](assignment03\assignment03-pie.ipynb), and the pie chart generated is below.
 
-```ruby
-
-```
+![assignment 3, pie chart](assignment03\assignment03-pie.ipynb)
 
 ***
 
-## **Assignment 05** -
+## **Assignment 05** -]
 
 **Assignment Instructions:**
 
