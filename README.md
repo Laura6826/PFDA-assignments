@@ -154,7 +154,7 @@ Task 1: Commit something to your assignment repository this week (anything)
 
 Task 2: I have put a CSV file in a assignment folder in the PFDA-courseware repository
 
-Create a jupyter notebook called assignment2-weather.ipynb that has a nice plot of the temperature over time
+Create a jupyter notebook called `assignment2-weather.ipynb` that has a nice plot of the temperature over time
 
 ```ruby
 dryBulbTemperature_Celsius
@@ -170,7 +170,7 @@ print("Hello World!")
 
 #### Task 2
 
-The notebook created to fulfill this part of the assignment can be located [here](assignment02\assignment2-weather.ipynb)
+The notebook created to fulfill this part of the assignment can be located [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment02/assignment2-weather.ipynb)
 
 **My notes:**
 
@@ -192,11 +192,11 @@ The note book should have a nice pie chart of peoples email domains in the [csv 
 
 The notebook associated with assignment 3 can be found [here](assignment03\assignment03-pie.ipynb), and the pie chart generated is below.
 
-![assignment 3, pie chart](assignment03\assignment03-pie.ipynb)
+![assignment 3, pie chart](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment03/images/assignment03.jpg)
 
 ***
 
-## **Assignment 05** -]
+## **Assignment 05** -
 
 **Assignment Instructions:**
 
