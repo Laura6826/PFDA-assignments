@@ -223,59 +223,22 @@ The notebook associated with assignment 3 can be found [here](https://github.com
 
 **Assignment Instructions:**
 
-**My notes:**
+- Create a python file or notebook called assignment_6_Weather (.py or .ipynb)
+- Get the data from this [link](https://cli.fusio.net/cli/climate_data/webdata/hly4935.csv).
 
-```ruby
+Plot:
 
-```
-
-**When run:**
-
-**Associated Code:**
-
-***
-
-## **Assignment 07** -
-
-**Assignment Instructions:**
+1. The temperature
+2. The mean temperature each day
+3. The mean temperature for each month
+4. The Windspeed (there is data missing from this column)
+5. The rolling windspeed (say over 24 hours)
+6. The max windspeed for each day
+7. The monthly mean of the daily max windspeeds (yer I am being nasty here)
 
 **My notes:**
 
-**When run:**
-
-**Associated Code:**
-
-```ruby
-  
-```
-
-***
-
-## **Assignment 08** -
-
-**Assignment Instructions:**
-
-**My notes:**
-
-**Associated Code:**
-
-```ruby
-
-```
-
-***
-
-## **Assignment 09** -
-
-**Assignment Instructions:**
-
-**My notes:**
-
-**Associated Code:**
-
-```ruby
-
-```
+The Jupyter notebook associated with this assignment can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment06/assignment_6_weather.ipynb)
 
 ***
 
