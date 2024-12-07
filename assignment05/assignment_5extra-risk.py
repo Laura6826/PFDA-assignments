@@ -109,4 +109,4 @@ plt.ylabel('Number of Rounds Won', fontsize= 12)
 plt.xlabel('Teams')
 plt.show()
 
-plt.savefig('images/Assignment05_EXTRA_Risk Battle Simulation.jpg')
+plt.savefig('assignment06/images/Assignment05_EXTRA_Risk Battle Simulation.jpg')

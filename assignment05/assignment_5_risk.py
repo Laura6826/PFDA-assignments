@@ -104,4 +104,4 @@ plt.ylabel('Total Battles Won')
 plt.xlabel('Teams')
 plt.show()
 
-plt.savefig('images/Assignment05_Risk Battle Simulation.jpg')
+plt.savefig('assignment05/images/Assignment05_Risk Battle Simulation.jpg')
