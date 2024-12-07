@@ -24,8 +24,8 @@ This README file was written using the [GitHub's documentation on READMEs](https
 
     1. [Assignment 01- Create Directory Structure](#assignment-01---create-directory-structure)
     2. [Assignment 02- Weather](#assignment-02---weather)
-    3. [Assignment 03- Domains]()
-    5. [Assignment 05- ]()
+    3. [Assignment 03- Domains](#assignment-03---domains)
+    5. [Assignment 05- Risk ](#assignment-05--risk)
     6. [Assignment 06- ]()
     7. [Assignment 07- ]()
     8. [Assignment 08- ]()
@@ -190,25 +190,32 @@ The note book should have a nice pie chart of peoples email domains in the [csv 
 
 **My notes:**
 
-The notebook associated with assignment 3 can be found [here](assignment03\assignment03-pie.ipynb), and the pie chart generated is below.
+The notebook associated with assignment 3 can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment03/assignment03-pie.ipynb), and the pie chart generated is below.
 
 ![assignment 3, pie chart](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment03/images/assignment03.jpg)
 
 ***
 
-## **Assignment 05** -
+## **Assignment 05** -Risk
 
 **Assignment Instructions:**
 
+#### Basic
+
+- Write a program (or notebook) called `assignment_5_risk` (.py or .ipynb).
+- The program should simulates 1000 individual battle rounds in Risk (3 attacker vs 2 defender) and plots the result.
+- One battle round is one shake of the attacker and defender dice.
+
+#### Extra
+
+- A more complicated version simulates a full series of rounds for armies of arbitrary sizes, until one side is wiped out, and plots the results.
+
 **My notes:**
 
-**When run:**
-
-**Associated Code:**
-
-```ruby
-
-```
+- For the basic game of risk, we predefine a battle to 1000 rounds.
+- For the 'extra' part of the task, the player is prompted to enter the size of the attacker army and the defenders army. 
+- There is a lot of comments in this assignment, as it was very difficult and it was necessary to note each step as it was complete, so it would be easier to tweek as it was developing.
+- Microscoft Copilot was used during this assignment to help debg difficult parts of the code.
 
 ***
 
