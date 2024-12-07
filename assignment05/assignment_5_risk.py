@@ -53,7 +53,7 @@ def battle_round():
         d = defender_dice[i]
                     # An if statement is used to compare the dice rolls and determine the outcome of the battle.
                     # we must remember that the attacker will win if the roll great or equal to the defenders roll.
-        if a >= d:
+        if a > d:
             defender_losses += 1
         else:
             attacker_losses += 1

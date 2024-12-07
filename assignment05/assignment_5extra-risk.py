@@ -25,7 +25,7 @@ def battle_round():
     defender_losses = 0
     
     for a, d in zip(attacker_dice, defender_dice):
-        if a >= d:
+        if a > d:
             defender_losses = 2  # Defender loses 2 units
             break  # Only one side can lose dice in each round
         else:
