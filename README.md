@@ -26,10 +26,7 @@ This README file was written using the [GitHub's documentation on READMEs](https
     2. [Assignment 02- Weather](#assignment-02---weather)
     3. [Assignment 03- Domains](#assignment-03---domains)
     5. [Assignment 05- Risk ](#assignment-05--risk)
-    6. [Assignment 06- ]()
-    7. [Assignment 07- ]()
-    8. [Assignment 08- ]()
-    9. [Assignment 09- ]()
+    6. [Assignment 06- Knock airport Weather](#assignment-06---knock-airport-weather)
 
 ## 1. Introduction
 
@@ -219,7 +216,7 @@ The notebook associated with assignment 3 can be found [here](https://github.com
 
 ***
 
-## **Assignment 06** -
+## **Assignment 06** - Knock airport Weather
 
 **Assignment Instructions:**
 
