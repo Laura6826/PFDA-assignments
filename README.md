@@ -207,6 +207,7 @@ The python file associated with assignment 5, **basic** can be found [here](http
 - A more complicated version simulates a full series of rounds for armies of arbitrary sizes, until one side is wiped out, and plots the results.
 
 The python file associated with assignment 5, **extra** can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment05/assignment_5extra-risk.py)
+
 **My notes:**
 
 - For the 'basic' game of risk, we predefine a battle to 1000 rounds.
