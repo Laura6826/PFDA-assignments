@@ -11,7 +11,7 @@ This README file was written using the [GitHub's documentation on READMEs](https
 
   &#x26a0;&#xfe0f; **DISCLAIMER**
 
-  Microsoft Co-Pilot was used to generate ideas of the content of the following notebook. That said, the notebook is mainly my own work, as I had to re-work the code the text in generated to meet my own needs.(*The warning icon was sourced from [Stackoverflow](https://stackoverflow.com/questions/50544499/how-to-make-a-styled-markdown-admonition-box-in-a-github-gist)*)
+  Microsoft Co-Pilot was used to generate ideas of the content of the following notebook. That said, the notebook is mainly my own work, as I had to re-work the code the text in generated to meet my own needs (*The warning icon was sourced from [Stackoverflow](https://stackoverflow.com/questions/50544499/how-to-make-a-styled-markdown-admonition-box-in-a-github-gist)*).
 
 ## **Table of contents**
 
@@ -30,11 +30,11 @@ This README file was written using the [GitHub's documentation on READMEs](https
 
 ## 1. Introduction
 
-This project was created to fufill an assessment requirement of Programming for Data Analytics 24-25: 4369, as part of the H.Dip in Science in Data Analytics.
+This project was created to fulfill an assessment requirement of Programming for Data Analytics 24-25: 4369, as part of the H.Dip in Science in Data Analytics.
 
 Each week, following a series of lectures, an assignment was set, to demonstrate both learning and additional reading/research on the topics discussed in the lectures.
 
-This repository is collection of my weekly assignments, including some additional guidance and instruction in how to run each Assignment/program.
+This repository is a collection of my weekly assignments, including some additional guidance and instruction on how to run each assignment/program.
 
 ***
 
@@ -53,7 +53,7 @@ The purpose of the assessment is to ensure students can demonstrate the followin
 
 ### Necessary software
 
-In order to run the included files, you will need to ensure that you have access to the correct softwear. I would recommend downloading the following applications (ensuring sufficent space on your hard drive prior to installation):
+In order to run the included files, you will need to ensure that you have access to the correct software. I would recommend downloading the following applications (ensuring sufficient space on your hard drive prior to installation):
 
 1. [Anaconda](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) (if Anaconda is too large, miniconda would also suffice).
 2. [Visual Studio Code](https://code.visualstudio.com/Download) (this is a code editor).
@@ -72,7 +72,7 @@ A number of [additional files](https://github.com/github/gitignore/tree/main/Glo
 
 ## How to run the Notebook
 
-### Using Using Visual Studio Code & Anaconda or GitHub Codespaces
+### Using Visual Studio Code & Anaconda or GitHub Codespaces
 
 **Clone the Repository**:
 
@@ -82,7 +82,7 @@ A number of [additional files](https://github.com/github/gitignore/tree/main/Glo
 
 **Install the required packages**:
 
-For a seamless excutition, I would also recommend you have access to the below libraries prior to running the files. The libraries required to run this file (as noted below), can be installed with the following code:
+For a seamless executition, I would also recommend you have access to the below libraries prior to running the files. The libraries required to run this file (as noted below), can be installed with the following code:
 
 ```ruby
 pip install -r requirements.txt
@@ -108,7 +108,7 @@ pip install -r requirements.txt
 
 ## 4. How to get help
 
-I have attached below,a number of helpful links, should you wish to extrapolate on any of the methods used within this project.
+I have attached below, a number of helpful links, should you wish to extrapolate on any of the methods used within this project.
 
 1. [Anaconda](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf)
 1. [Visual Studio Code](https://code.visualstudio.com/Download)
@@ -118,13 +118,13 @@ I have attached below,a number of helpful links, should you wish to extrapolate 
 1. [Matplotlib.py](https://matplotlib.org/)
 1. [Seaborn](https://seaborn.pydata.org/)
 
-Additionally, a number of links are embedded within the code, in areas that i found confussing/difficult, that should help should there be any difficulty.
+Additionally, a number of links are embedded within the code, in areas that I found confusing, that should help should there be any difficulty.
 
 ## 5. How to contribute
 
-As this project was created to fufill an assessment requirement of the Principles of Data Analytics, as part of the H.Dip in Science in Data Analytics, no contributions will be allowed, in order to comply with ATU Policy on [Plagiarism](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) and the [Student Code of Conduct](https://www.atu.ie/sites/default/files/2022-08/Student%20Code_Final_August_2022.pdf).
+As this project was created to fulfil an assessment requirement of the Principles of Data Analytics, as part of the H.Dip in Science in Data Analytics, no contributions will be allowed, in order to comply with ATU Policy on [Plagiarism](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) and the [Student Code of Conduct](https://www.atu.ie/sites/default/files/2022-08/Student%20Code_Final_August_2022.pdf).
 
-Should you find any errors or have any recommendations , please submit a pull request on Github. or just wish to contact that author, you can do so at <maxwell6826@gmail.com>.
+Should you find any errors or have any recommendations, please submit a pull request on GitHub. or just wish to contact that author, you can do so at <maxwell6826@gmail.com>.
 
 ***
 
@@ -134,12 +134,12 @@ Should you find any errors or have any recommendations , please submit a pull re
 
 **Assignment Instructions:**
 
-Create a repository for this module, and upload a link to where you will put your handups.
+Create a repository for this module, and upload a link to where you will put your assignment submissions.
 
 You have a Choice of the format of your repositories, Either:
 
 1. One repository with three folders (assignments, mywork, project). Make sure you submit a link to the appropriate folder.
-1. Three separate repositories (PFDA-assignments, PFDA-mywork, PFDA-project). Make sure you submit a link to the appropriate repository
+1. Three separate repositories (PFDA-assignments, PFDA-mywork, PFDA-project). Make sure you submit a link to the appropriate repository (this was my format choice).
 
 ***
 
@@ -149,9 +149,7 @@ You have a Choice of the format of your repositories, Either:
 
 Task 1: Commit something to your assignment repository this week (anything)
 
-Task 2: I have put a CSV file in a assignment folder in the PFDA-courseware repository
-
-Create a jupyter notebook called `assignment2-weather.ipynb` that has a nice plot of the temperature over time
+Task 2: I have put a CSV file in a assignment folder in the PFDA-courseware repository. Create a Jupyter notebook called `assignment2-weather.ipynb` that has a nice plot of the temperature over time.
 
 ```ruby
 dryBulbTemperature_Celsius
@@ -167,7 +165,7 @@ print("Hello World!")
 
 #### Task 2
 
-The notebook created to fulfill this part of the assignment can be located [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment02/assignment2-weather.ipynb)
+The notebook created to fulfil this part of the assignment can be located [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment02/assignment2-weather.ipynb)
 
 **My notes:**
 
@@ -181,13 +179,12 @@ The plot was initally generated using Matplotlib and afterwards on Seaborn.
 
 **Assignment Instructions:**
 
-Create a notebook called `assignment03-pie.ipynb`.
-
-The note book should have a nice pie chart of peoples email domains in the [csv file](https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download).
+- Create a notebook called `assignment03-pie.ipynb`.
+- The Jupyter notebook should have a nice pie chart of peoples email domains in the [csv file](https://drive.google.com/uc?id=1AWPf-pJodJKeHsARQK_RHiNsE8fjPCVK&export=download).
 
 **My notes:**
 
-The notebook associated with assignment 3 can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment03/assignment03-pie.ipynb), and the pie chart generated is below.
+The Jupyter notebook associated with assignment 3 can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment03/assignment03-pie.ipynb), and the pie chart generated is below.
 
 ![assignment 3, pie chart](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment03/images/assignment03.jpg)
 
@@ -200,19 +197,22 @@ The notebook associated with assignment 3 can be found [here](https://github.com
 ### Basic
 
 - Write a program (or notebook) called `assignment_5_risk` (.py or .ipynb).
-- The program should simulates 1000 individual battle rounds in Risk (3 attacker vs 2 defender) and plots the result.
+- The program should simulate 1000 individual battle rounds in Risk (3 attacker vs 2 defender) and plots the result.
 - One battle round is one shake of the attacker and defender dice.
+
+The python file associated with assignment 5, **basic** can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment05/assignment_5_risk.py)
 
 ### Extra
 
 - A more complicated version simulates a full series of rounds for armies of arbitrary sizes, until one side is wiped out, and plots the results.
 
+The python file associated with assignment 5, **extra** can be found [here](https://github.com/Laura6826/PFDA-assignments/blob/main/assignment05/assignment_5extra-risk.py)
 **My notes:**
 
-- For the basic game of risk, we predefine a battle to 1000 rounds.
-- For the 'extra' part of the task, the player is prompted to enter the size of the attacker army and the defenders army.
-- There is a lot of comments in this assignment, as it was very difficult and it was necessary to note each step as it was complete, so it would be easier to tweek as it was developing.
-- Microscoft Copilot was used during this assignment to help debg difficult parts of the code.
+- For the 'basic' game of risk, we predefine a battle to 1000 rounds.
+- For the 'extra' part of the task, the player is prompted to enter the size of the attacker army and the defender's army.
+- There are a lot of comments within the python files of this assignment, as it was quite difficult, so it was necessary to note each step as it was complete, so it would be easier to tweek as it was developing.
+- Microsoft Copilot was used during this assignment to help with difficult parts of the code.
 
 ***
 
@@ -231,7 +231,7 @@ Plot:
 4. The Windspeed (there is data missing from this column)
 5. The rolling windspeed (say over 24 hours)
 6. The max windspeed for each day
-7. The monthly mean of the daily max windspeeds (yer I am being nasty here)
+7. The monthly mean of the daily max windspeeds.
 
 **My notes:**
 
